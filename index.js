@@ -4,8 +4,6 @@ const cheerio = require('cheerio');
 const axios = require('axios');
 const e = require('express');
 
-//const apikey = "5b5fbf1c8c03aaa6e3af3b426583c306";
-
 const generateScraperUrl = (apikey) => `http://api.scraperapi.com?api_key=${apikey}&autoparse=true`
 
 const app = express();
