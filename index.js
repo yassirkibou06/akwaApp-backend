@@ -3,8 +3,6 @@ const express = require('express');
 const cheerio = require('cheerio');
 const axios = require('axios');
 
-//const generateScraperUrl = (apikey) => `http://api.scraperapi.com?api_key=${apikey}&autoparse=true`;
-
 const app = express();
 
 app.get('/', (req, res) => {
@@ -13,7 +11,7 @@ app.get('/', (req, res) => {
 
 //GET Products Categories
 app.get('/categories/list', async (req, res) => {
-    
+
     const Categories = [];
 
     const cateOne = "clothing";
@@ -33,9 +31,9 @@ app.get('/categories/list', async (req, res) => {
 app.get('/products/list/:gender/:categorie', async (req, res) => {
     const { gender } = req.params;
     const { categorie } = req.params;
-    
 
-    axios(`https://www.theoutnet.com/en-us/shop/${gender}/${categorie}`)
+
+    axios.get(`https://www.theoutnet.com/en-us/shop/${gender}/${categorie}`)
         .then(response => {
             const html = response.data;
             const $ = cheerio.load(html);
@@ -67,7 +65,7 @@ app.get('/products/list/:gender/:categorie', async (req, res) => {
 app.get('/products/detail/:productId', async (req, res) => {
     const { productId } = req.params;
 
-    axios(`https://www.theoutnet.com/en-us/shop/product/${productId}`)
+    axios.get(`https://www.theoutnet.com/en-us/shop/product/${productId}`)
         .then(response => {
             const html = response.data;
             const $ = cheerio.load(html);
@@ -86,7 +84,7 @@ app.get('/products/detail/:productId', async (req, res) => {
                 const SizeFour = $(el).find('.GridSelect11 li:nth-child(4) .GridSelect11__optionBox').text();
                 const SizeFive = $(el).find('.GridSelect11 li:nth-child(5) .GridSelect11__optionBox').text();
                 const AllSize = [];
-                AllSize.push({SizeOne,SizeTwo,SizeThree,SizeFour,SizeFive});
+                AllSize.push({ SizeOne, SizeTwo, SizeThree, SizeFour, SizeFive });
                 Products.push({
                     name,
                     brandName,
