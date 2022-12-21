@@ -36,7 +36,7 @@ app.get('/products/list/:gender/:categorie', async (req, res) => {
     const { categorie } = req.params;
     const { api_key } = req.params;
 
-    axios(`${generateScraperUrl(api_key)}&url=https://www.theoutnet.com/en-us/shop/${gender}/shoes`)
+    axios(`${generateScraperUrl(api_key)}&url=https://www.theoutnet.com/en-us/shop/${gender}/${categorie}`)
         .then(response => {
             const html = response.data;
             const $ = cheerio.load(html);
