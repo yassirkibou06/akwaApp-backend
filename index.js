@@ -2,11 +2,11 @@ const PORT = process.env.PORT || 8005;
 const express = require('express');
 const cheerio = require('cheerio');
 const axios = require('axios');
-const e = require('express');
-
-const generateScraperUrl = (apikey) => `http://api.scraperapi.com?api_key=${apikey}&autoparse=true`
-
 const app = express();
+
+const generateScraperUrl = (apikey) => `http://api.scraperapi.com?api_key=${apikey}&autoparse=true`;
+
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Welcome to my api');
