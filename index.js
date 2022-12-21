@@ -2,11 +2,10 @@ const PORT = process.env.PORT || 8005;
 const express = require('express');
 const cheerio = require('cheerio');
 const axios = require('axios');
+
+//const generateScraperUrl = (apikey) => `http://api.scraperapi.com?api_key=${apikey}&autoparse=true`;
+
 const app = express();
-
-const generateScraperUrl = (apikey) => `http://api.scraperapi.com?api_key=${apikey}&autoparse=true`;
-
-app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Welcome to my api');
@@ -34,9 +33,9 @@ app.get('/categories/list', async (req, res) => {
 app.get('/products/list/:gender/:categorie', async (req, res) => {
     const { gender } = req.params;
     const { categorie } = req.params;
-    const { api_key } = req.params;
+    
 
-    axios(`${generateScraperUrl(api_key)}&url=https://www.theoutnet.com/en-us/shop/${gender}/${categorie}`)
+    axios(`https://www.theoutnet.com/en-us/shop/${gender}/${categorie}`)
         .then(response => {
             const html = response.data;
             const $ = cheerio.load(html);
@@ -67,9 +66,8 @@ app.get('/products/list/:gender/:categorie', async (req, res) => {
 // Products Details ///
 app.get('/products/detail/:productId', async (req, res) => {
     const { productId } = req.params;
-    const { api_key } = req.params;
 
-    axios(`${generateScraperUrl(api_key)}&url=https://www.theoutnet.com/en-us/shop/product/${productId}`)
+    axios(`https://www.theoutnet.com/en-us/shop/product/${productId}`)
         .then(response => {
             const html = response.data;
             const $ = cheerio.load(html);
