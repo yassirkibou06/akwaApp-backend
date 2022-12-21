@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     res.send('Welcome to my api');
 })
 
-//GET Products Categories
+//GET Products Categories//
 app.get('/categories/list', async (req, res) => {
 
     const Categories = [];
