@@ -61,7 +61,7 @@ app.get('/products/list/:gender/:categorie', async (req, res) => {
         })
 })
 
-// Products Details ///
+/// Products Details ///
 app.get('/products/detail/:productId', async (req, res) => {
     const { productId } = req.params;
 
