@@ -98,6 +98,4 @@ app.get('/products/detail/:productId', async (req, res) => {
             res.json(Products)
         })
 })
-
-var server = app.listen(PORT, () => console.log(`start running on port ${PORT}`));
-server.setTimeout(500000);
+app.listen(PORT, () => console.log(`start running on port ${PORT}`));
