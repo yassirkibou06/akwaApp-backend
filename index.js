@@ -1,6 +1,7 @@
 const PORT = process.env.PORT || 7005;
 const express = require('express');
 const cheerio = require('cheerio');
+const path = require('path');
 const axios = require('axios');
 
 const app = express();
@@ -9,26 +10,31 @@ app.get('/', (req, res) => {
     res.send('Welcome to my api');
 })
 
+app.use(express.static(path.resolve(__dirname, '../akwa-app/build')));
+
 ////GET Products Categories////
 app.get('/categories/list', async (req, res) => {
-
-    const Categories = [];
-
-    const cateOne = "clothing";
-    const cateTwo = "shoes";
-    const cateThree = "bestsellers";
-
-    Categories.push({
-        cateOne,
-        cateTwo,
-        cateThree
-    })
-    res.json(Categories)
+    res.send(
+    [
+        {
+            id: 1,
+            cateName: "clothing"
+        },
+        {
+            id:2,
+            cateName: "shoes"
+        },
+        {
+            id:3,
+            cateName: "bestsellers"
+        }
+    ]
+    )
 })
 
 
 // GET Products List ///
-app.get('/products/list/:gender/:categorie', async (req, res) => {
+app.get(`/products/list/:gender/:categorie`, async (req, res) => {
     const { gender } = req.params;
     const { categorie } = req.params;
 
@@ -47,6 +53,7 @@ app.get('/products/list/:gender/:categorie', async (req, res) => {
                 const whitePrice = $(el).find('.PriceWithSchema9__wasPrice').text();
                 const discount = $(el).find('.PriceWithSchema9__discount.PriceWithSchema9__discount--sale').text();
                 const imageUrl = $(el).find('img').attr('src');
+                const imageSecond = $(el).find('.DoubleImage18.secondaryImage img').attr('src');
                 Products.push({
                     productId,
                     name,
@@ -54,7 +61,43 @@ app.get('/products/list/:gender/:categorie', async (req, res) => {
                     redPrice,
                     whitePrice,
                     discount,
-                    imageUrl
+                    imageUrl,
+                    imageSecond
+                })
+            })
+            res.json(Products)
+        })
+})
+
+//// Get products list for women ///
+app.get(`/products/list/:categorie`, async (req, res) => {
+    const { categorie } = req.params;
+
+
+    axios.get(`https://www.theoutnet.com/en-us/shop/${categorie}`)
+        .then(response => {
+            const html = response.data;
+            const $ = cheerio.load(html);
+
+            const Products = []
+            $('.ProductItem24__p').map((i, el) => {
+                const productId = $(el).find('.ProductItem24__details.ProductItem24__details--brief').attr('data-product-id');
+                const name = $(el).find('.ProductItem24__name').text();
+                const brandName = $(el).find('.ProductItem24__designer').text();
+                const redPrice = $(el).find('span[content]').text();
+                const whitePrice = $(el).find('.PriceWithSchema9__wasPrice').text();
+                const discount = $(el).find('.PriceWithSchema9__discount.PriceWithSchema9__discount--sale').text();
+                const imageUrl = $(el).find('img').attr('src');
+                const imageSecond = $(el).find('.DoubleImage18.secondaryImage img').attr('src');
+                Products.push({
+                    productId,
+                    name,
+                    brandName,
+                    redPrice,
+                    whitePrice,
+                    discount,
+                    imageUrl,
+                    imageSecond
                 })
             })
             res.json(Products)
@@ -98,4 +141,46 @@ app.get('/products/detail/:productId', async (req, res) => {
             res.json(Products)
         })
 })
+
+///GET Products List types ///
+app.get('/products/list/:gender/:cate/:type', async (req, res) => {
+    const { gender } = req.params;
+    const { cate } = req.params;
+    const { type } = req.params;
+
+
+    axios.get(`https://www.theoutnet.com/en-us/shop/${gender}/${cate}/${type}`)
+        .then(response => {
+            const html = response.data;
+            const $ = cheerio.load(html);
+
+            const Products = [];
+            $('.ProductItem24__p').map((i, el) => {
+                const productId = $(el).find('.ProductItem24__details.ProductItem24__details--brief').attr('data-product-id');
+                const name = $(el).find('.ProductItem24__name').text()
+                const brandName = $(el).find('.ProductItem24__designer').text();
+                const redPrice = $(el).find('span[content]').text();
+                const whitePrice = $(el).find('.PriceWithSchema9__wasPrice').text();
+                const discount = $(el).find('.PriceWithSchema9__discount.PriceWithSchema9__discount--sale').text();
+                const imageUrl = $(el).find('img').attr('src');
+                const imageSecond = $(el).find('.DoubleImage18.secondaryImage img').attr('src');
+                Products.push({
+                    productId,
+                    name,
+                    brandName,
+                    redPrice,
+                    whitePrice,
+                    discount,
+                    imageUrl,
+                    imageSecond
+                })
+            })
+            res.json(Products)
+        })
+})
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../akwa-app/build', 'index.html'));
+  });
+
 app.listen(PORT, () => console.log(`start running on port ${PORT}`));
