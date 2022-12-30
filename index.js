@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 app.use(express.static(path.resolve(__dirname, '../akwa-app/build')));
 
-////GET Products Categories////
+////GET Products Categories/////
 app.get('/categories/list', async (req, res) => {
     res.send(
     [
