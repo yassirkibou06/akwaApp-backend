@@ -1,19 +1,32 @@
-const PORT = process.env.PORT || 7005;
-const express = require('express');
-const cheerio = require('cheerio');
-const path = require('path');
-const axios = require('axios');
+const PORT = process.env.PORT || 3001;
+import express from 'express'
+import cheerio from 'cheerio'
+import bodyParser from 'body-parser'
+import mongoose from 'mongoose'
+import cors from 'cors'
+import axios from 'axios'
+import dotenv from 'dotenv'
+
+dotenv.config();
 
 const app = express();
+
+app.use(bodyParser.urlencoded({limit: "30mb", extended: true }));
+app.use(express.urlencoded({limit: "30mb", extended: true }));
+app.use(cors())
+
+mongoose.connect(process.env.CONNECTION_URL, { useUnifiedTopology : true, useNewUrlParser : true , })
+.then(() => {
+    console.log("connected");
+ })
+ .catch((e) => console.log("No connection"))
 
 app.get('/', (req, res) => {
     res.send('Welcome to my api');
 })
 
-app.use(express.static(path.resolve(__dirname, '../akwa-app/build')));
-
 ////GET Products Categories//////
-app.get('/categories/list', async (req, res) => {
+/*app.get('/categories/list', async (req, res) => {
     res.send(
     [
         {
@@ -30,7 +43,7 @@ app.get('/categories/list', async (req, res) => {
         }
     ]
     )
-})
+})*/
 
 
 // GET Products List ///
@@ -175,12 +188,12 @@ app.get('/products/list/:gender/:cate/:type', async (req, res) => {
                     imageSecond
                 })
             })
-            res.json(Products)
+            res.json(Products);
         })
 })
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../akwa-app/build', 'index.html'));
-  });
-
 app.listen(PORT, () => console.log(`start running on port ${PORT}`));
+//app.get('*', (req, res) => {
+//    res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
+//  });
+// app.use(express.static(path.resolve(__dirname, '../frontend/build')))
