@@ -6,7 +6,7 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import axios from 'axios'
 import dotenv from 'dotenv'
-import path from 'path';
+//import path from 'path';
 
 dotenv.config();
 
@@ -195,9 +195,9 @@ app.get('/products/list/:gender/:cate/:type', async (req, res) => {
 
 app.listen(PORT, () => console.log(`start running on port ${PORT}`));
 
-app.use(express.static(path.resolve(__dirname, '../frontend/build')))
+//app.use(express.static(path.resolve(__dirname, '../frontend/build')))
 
-app.get('*', (req, res) => {
-   res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
-  });
+//app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
+//  });
 
