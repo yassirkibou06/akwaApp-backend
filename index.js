@@ -16,7 +16,9 @@ app.use(bodyParser.urlencoded({limit: "30mb", extended: true }));
 app.use(express.urlencoded({limit: "30mb", extended: true }));
 app.use(cors())
 
-mongoose.connect(process.env.CONNECTION_URL, { useUnifiedTopology : true, useNewUrlParser : true , })
+const CONNECTION_URL = "mongodb+srv://client:client23@cluster0.qgojrgx.mongodb.net/?retryWrites=true&w=majority"
+
+mongoose.connect(CONNECTION_URL, { useUnifiedTopology : true, useNewUrlParser : true , })
 .then(() => {
     console.log("connected");
  })
