@@ -243,7 +243,6 @@ app.get('/products/list/women/jeans', async (req, res) => {
     res.json(Categories.jeansWomen);
 })
 
-
 app.listen(PORT, () => console.log(`start running on port ${PORT}`));
 
 //app.use(express.static(path.resolve(__dirname, '../frontend/build')))
