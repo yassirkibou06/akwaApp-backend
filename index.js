@@ -2,7 +2,7 @@ const PORT = process.env.PORT || 3001;
 const express = require('express')
 const cheerio = require('cheerio')
 const axios = require('axios')
-const bodyParser = require('body-Parser')
+const bodyParser = require('body-parser')
 const list = require('./List.json')
 const Categories = require('./Categories.json')
 
