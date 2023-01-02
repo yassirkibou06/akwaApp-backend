@@ -132,7 +132,7 @@ app.get('/products/detail/:productId', async (req, res) => {
                 const SizeFive = $(el).find('.GridSelect11 li:nth-child(5) .GridSelect11__optionBox').text();
                 const AllSize = [];
                 AllSize.push({ SizeOne, SizeTwo, SizeThree, SizeFour, SizeFive });
-                Products.push({
+               Products.push({
                     name,
                     brandName,
                     redPrice,
@@ -142,7 +142,7 @@ app.get('/products/detail/:productId', async (req, res) => {
                     AllSize
                 })
             })
-            res.json(Products)
+            res.send(Products)
         })
 })
 /*
@@ -241,6 +241,27 @@ app.get('/products/list/women/pants', async (req, res) => {
 //
 app.get('/products/list/women/jeans', async (req, res) => {
     res.json(Categories.jeansWomen);
+})
+app.get('/products/details/:id', async (req, res) => {
+    res.send([
+        {
+            "name": "Jack cotton-jersey shirt",
+            "brandName": "RAG & BONE",
+            "redPrice": "$147",
+            "whitePrice": "$295",
+            "discount": "50% off",
+            "imageUrl1": "//www.theoutnet.com/variants/images/1647597298277411/F/w1020_q80.jpg",
+            "AllSize": [
+                {
+                    "SizeOne": "XXS",
+                    "SizeTwo": "XS",
+                    "SizeThree": "S",
+                    "SizeFour": "M",
+                    "SizeFive": "L"
+                }
+            ]
+        }
+    ])
 })
 
 app.listen(PORT, () => console.log(`start running on port ${PORT}`));
