@@ -1,28 +1,15 @@
 const PORT = process.env.PORT || 3001;
 import express from 'express'
 import cheerio from 'cheerio'
-import bodyParser from 'body-parser'
-import mongoose from 'mongoose'
-import cors from 'cors'
 import axios from 'axios'
-import dotenv from 'dotenv'
-//import path from 'path';
+import bodyParser from 'body-parser';
+import list from './List.json' assert { type: "json" };
+import Categories from './Categories.json' assert { type: "json" };
 
-dotenv.config();
 
 const app = express();
 
-app.use(bodyParser.urlencoded({limit: "30mb", extended: true }));
-app.use(express.urlencoded({limit: "30mb", extended: true }));
-app.use(cors())
-
-const CONNECTION_URL = "mongodb+srv://client:client23@cluster0.qgojrgx.mongodb.net/?retryWrites=true&w=majority"
-
-mongoose.connect(CONNECTION_URL, { useUnifiedTopology : true, useNewUrlParser : true , })
-.then(() => {
-    console.log("connected");
- })
- .catch((e) => console.log("No connection"))
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.send('Welcome to my api');
@@ -48,8 +35,8 @@ app.get('/', (req, res) => {
     )
 })*/
 
-
 // GET Products List ///
+/*
 app.get(`/products/list/:gender/:categorie`, async (req, res) => {
     const { gender } = req.params;
     const { categorie } = req.params;
@@ -61,14 +48,14 @@ app.get(`/products/list/:gender/:categorie`, async (req, res) => {
             const $ = cheerio.load(html);
 
             const Products = []
-            $('.ProductItem24__p').map((i, el) => {
+            $('.ProductItem24.ProductList52__productItem').map((i, el) => {
                 const productId = $(el).find('.ProductItem24__details.ProductItem24__details--brief').attr('data-product-id');
                 const name = $(el).find('.ProductItem24__name').text();
                 const brandName = $(el).find('.ProductItem24__designer').text();
                 const redPrice = $(el).find('span[content]').text();
                 const whitePrice = $(el).find('.PriceWithSchema9__wasPrice').text();
                 const discount = $(el).find('.PriceWithSchema9__discount.PriceWithSchema9__discount--sale').text();
-                const imageUrl = $(el).find('img').attr('src');
+                const imageUrl = $(el).find('.AspectRatio18__content img').attr('src');
                 const imageSecond = $(el).find('.DoubleImage18.secondaryImage img').attr('src');
                 Products.push({
                     productId,
@@ -119,6 +106,7 @@ app.get(`/products/list/:categorie`, async (req, res) => {
             res.json(Products)
         })
 })
+*/
 
 /// Products Details ///
 app.get('/products/detail/:productId', async (req, res) => {
@@ -157,6 +145,7 @@ app.get('/products/detail/:productId', async (req, res) => {
             res.json(Products)
         })
 })
+/*
 
 ///GET Products List types ///
 app.get('/products/list/:gender/:cate/:type', async (req, res) => {
@@ -194,6 +183,66 @@ app.get('/products/list/:gender/:cate/:type', async (req, res) => {
             res.json(Products);
         })
 })
+*/
+
+//////////////////////////////////////////////////////
+///
+//
+//// GET Products List Men ///
+
+app.get('/products/list/men/clothing', async (req, res) => {
+    res.json(list.clothingMen);
+})
+app.get('/products/list/men/shoes', async (req, res) => {
+    res.json(list.shoesMen);
+})
+app.get('/products/list/men/bestsellers', async (req, res) => {
+    res.json(list.bestSellersMen);
+})
+
+//////GET Products List for women ////
+app.get('/products/list/women/clothing', async (req, res) => {
+    res.json(list.clothingWomen);
+})
+app.get('/products/list/women/shoes', async (req, res) => {
+    res.json(list.shoesWomen);
+})
+app.get('/products/list/men/bestsellers', async (req, res) => {
+    res.json(list.bestSellersWomen);
+})
+////Gategorei (jackets/shorts/pants/jeans) Men///
+app.get('/products/list/men/jackets', async (req, res) => {
+    res.json(Categories.jacketsMen);
+})
+//
+app.get('/products/list/men/shorts', async (req, res) => {
+    res.json(Categories.shortsMen);
+})
+//
+app.get('/products/list/men/pants', async (req, res) => {
+    res.json(Categories.pantsMen);
+})
+//
+app.get('/products/list/men/jeans', async (req, res) => {
+    res.json(Categories.jeansMen);
+})
+////Gategorei (jackets/dresses/pants/jeans) Women///
+app.get('/products/list/women/jackets', async (req, res) => {
+    res.json(Categories.jacketsWomen);
+})
+//
+app.get('/products/list/women/dresses', async (req, res) => {
+    res.json(Categories.dressesWomen);
+})
+//
+app.get('/products/list/women/pants', async (req, res) => {
+    res.json(Categories.pantsWomen);
+})
+//
+app.get('/products/list/women/jeans', async (req, res) => {
+    res.json(Categories.jeansWomen);
+})
+
 
 app.listen(PORT, () => console.log(`start running on port ${PORT}`));
 

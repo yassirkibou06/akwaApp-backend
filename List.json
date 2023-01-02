@@ -1,0 +1,745 @@
+{
+  "clothingMen": [
+    {
+      "productId": "34344356237039429",
+      "name": "Printed French cotton-terry hoodie",
+      "brandName": "HELMUT LANG",
+      "redPrice": "$167",
+      "whitePrice": "$370",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/34344356237039429/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/34344356237039429/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597303077957",
+      "name": "Sierra Supreme quilted shell hooded down jacket",
+      "brandName": "WOOLRICH",
+      "redPrice": "$517",
+      "whitePrice": "$794",
+      "discount": "35% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597303077957/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597303077957/R/w340_q80.jpg"
+    },
+    {
+      "productId": "27086482324006467",
+      "name": "Slim-fit wool-blend suit pants",
+      "brandName": "SANDRO",
+      "redPrice": "$153",
+      "whitePrice": "$340",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/27086482324006467/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/27086482324006467/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597284225839",
+      "name": "Cotton-blend fleece hoodie",
+      "brandName": "FRAME",
+      "redPrice": "$119",
+      "whitePrice": "$263",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597284225839/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597284225839/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597277300379",
+      "name": "Logo-print cotton-jersey T-shirt",
+      "brandName": "ROBERTO CAVALLI",
+      "redPrice": "$116",
+      "whitePrice": "$290",
+      "discount": "60% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597277300379/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597277300379/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597305352432",
+      "name": "Buckland leather biker jacket",
+      "brandName": "MUUBAA",
+      "redPrice": "$338",
+      "whitePrice": "$750",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597305352432/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597305352432/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597285646408",
+      "name": "The Oxford cashmere sweater",
+      "brandName": "N.PEAL",
+      "redPrice": "$250",
+      "whitePrice": "$385",
+      "discount": "35% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597285646408/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597285646408/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597284229581",
+      "name": "Cotton-blend fleece sweatshirt",
+      "brandName": "FRAME",
+      "redPrice": "$114",
+      "whitePrice": "$253",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597284229581/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597284229581/R/w340_q80.jpg"
+    },
+    {
+      "productId": "27086482323989295",
+      "name": "Wool-blend crepe suit jacket",
+      "brandName": "SANDRO",
+      "redPrice": "$156",
+      "whitePrice": "$388",
+      "discount": "60% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/27086482323989295/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/27086482323989295/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597287570575",
+      "name": "Short-length swim shorts",
+      "brandName": "ONIA",
+      "redPrice": "$48",
+      "whitePrice": "$95",
+      "discount": "49% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597287570575/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597287570575/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597301979114",
+      "name": "Embroidered cotton-jersey T-shirt",
+      "brandName": "PALM ANGELS",
+      "redPrice": "$255",
+      "whitePrice": "$425",
+      "discount": "40% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597301979114/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597301979114/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597298945019",
+      "name": "Wool blazer",
+      "brandName": "FRAME",
+      "redPrice": "$286",
+      "whitePrice": "$713",
+      "discount": "60% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597298945019/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597298945019/R/w340_q80.jpg"
+    },
+    {
+      "productId": "13452677150743800",
+      "name": "The Essential ribbed wool half-zip sweater",
+      "brandName": "FRAME",
+      "redPrice": "$188",
+      "whitePrice": "$414",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/13452677150743800/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/13452677150743800/R/w340_q80.jpg"
+    }
+  ],
+  "clothingWomen": [
+    {
+      "productId": "38063312419999075",
+      "name": "Jonquille crocheted lace-trimmed ramie midi dress",
+      "brandName": "SANDRO",
+      "redPrice": "$445",
+      "whitePrice": "",
+      "discount": "",
+      "imageUrl": "//www.theoutnet.com/variants/images/38063312419999075/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/38063312419999075/R/w340_q80.jpg"
+    },
+    {
+      "productId": "10516758729003628",
+      "name": "Pussy-bow floral-print silk-chiffon blouse",
+      "brandName": "VALENTINO",
+      "redPrice": "$608",
+      "whitePrice": "$1,900",
+      "discount": "68% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/10516758729003628/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/10516758729003628/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597304506392",
+      "name": "Violet asymmetric sequined tulle midi dress",
+      "brandName": "RETROFÊTE",
+      "redPrice": "$380",
+      "whitePrice": "$690",
+      "discount": "45% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597304506392/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597304506392/R/w340_q80.jpg"
+    },
+    {
+      "productId": "29012654081377150",
+      "name": "Silk-georgette midi dress",
+      "brandName": "VALENTINO",
+      "redPrice": "$1,540",
+      "whitePrice": "$3,850",
+      "discount": "60% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/29012654081377150/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/29012654081377150/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597304345067",
+      "name": "Belted draped crepe gown",
+      "brandName": "RHEA COSTA",
+      "redPrice": "$958",
+      "whitePrice": "$1,994",
+      "discount": "52% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597304345067/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597304345067/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597303134478",
+      "name": "One-shoulder pleated floral-print chiffon gown",
+      "brandName": "MARCHESA NOTTE",
+      "redPrice": "$358",
+      "whitePrice": "$795",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597303134478/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597303134478/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597304356042",
+      "name": "One-sleeve belted cady maxi dress",
+      "brandName": "RHEA COSTA",
+      "redPrice": "$892",
+      "whitePrice": "$1,857",
+      "discount": "52% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597304356042/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597304356042/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597304302091",
+      "name": "Embellished tulle midi dress",
+      "brandName": "MARCHESA NOTTE",
+      "redPrice": "$430",
+      "whitePrice": "$795",
+      "discount": "46% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597304302091/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597304302091/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597303920994",
+      "name": "Embellished bandage maxi dress",
+      "brandName": "HERVÉ LÉGER",
+      "redPrice": "$995",
+      "whitePrice": "$1,990",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597303920994/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597303920994/R/w340_q80.jpg"
+    },
+    {
+      "productId": "3589493616166683",
+      "name": "Embellished silk crepe de chine shirt",
+      "brandName": "VALENTINO",
+      "redPrice": "$2,555",
+      "whitePrice": "$7,300",
+      "discount": "65% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/3589493616166683/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/3589493616166683/R/w340_q80.jpg"
+    },
+    {
+      "productId": "38063312419641969",
+      "name": "Tulipe gathered shantung midi dress",
+      "brandName": "SANDRO",
+      "redPrice": "$222",
+      "whitePrice": "$445",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/38063312419641969/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/38063312419641969/R/w340_q80.jpg"
+    },
+    {
+      "productId": "25458910981401657",
+      "name": "Crochet-trimmed ruffled fil coupé georgette maxi dress",
+      "brandName": "SELF-PORTRAIT",
+      "redPrice": "$237",
+      "whitePrice": "$475",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/25458910981401657/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/25458910981401657/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597304687002",
+      "name": "Draped pleated crepe gown",
+      "brandName": "RHEA COSTA",
+      "redPrice": "$958",
+      "whitePrice": "$1,994",
+      "discount": "52% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597304687002/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597304687002/R/w340_q80.jpg"
+    }
+  ],
+  "shoesMen": [
+    {
+      "productId": "1647597278268101",
+      "name": "Alonzo suede slippers",
+      "brandName": "VINCE.",
+      "redPrice": "$90",
+      "whitePrice": "$180",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597278268101/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597278268101/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597288493933",
+      "name": "Tangeri suede loafers",
+      "brandName": "SALVATORE FERRAGAMO",
+      "redPrice": "$366",
+      "whitePrice": "$630",
+      "discount": "42% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597288493933/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597288493933/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300556623",
+      "name": "Hamilton shearling-lined suede slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$95",
+      "whitePrice": "$189",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300556623/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300556623/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300490698",
+      "name": "Shearling slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$83",
+      "whitePrice": "$165",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300490698/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300490698/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300491397",
+      "name": "Hamilton shearling-lined suede slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$95",
+      "whitePrice": "$189",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300491397/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300491397/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300558566",
+      "name": "Shearling slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$83",
+      "whitePrice": "$165",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300558566/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300558566/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300484863",
+      "name": "Hamilton shearling-lined suede slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$95",
+      "whitePrice": "$189",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300484863/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300484863/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300489386",
+      "name": "Shearling-lined leather slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$83",
+      "whitePrice": "$165",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300489386/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300489386/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597278436648",
+      "name": "Alonzo suede slippers",
+      "brandName": "VINCE.",
+      "redPrice": "$90",
+      "whitePrice": "$180",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597278436648/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597278436648/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300488643",
+      "name": "Shearling-lined leather slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$83",
+      "whitePrice": "$165",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300488643/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300488643/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300490697",
+      "name": "Shearling slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$75",
+      "whitePrice": "$165",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300490697/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300490697/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300554347",
+      "name": "Shearling slippers",
+      "brandName": "AUSTRALIA LUXE COLLECTIVE",
+      "redPrice": "$75",
+      "whitePrice": "$165",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300554347/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300554347/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597278276464",
+      "name": "Alonzo suede slippers",
+      "brandName": "VINCE.",
+      "redPrice": "$90",
+      "whitePrice": "$180",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597278276464/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597278276464/R/w340_q80.jpg"
+    }
+  ],
+  "shoesWomen": [
+    {
+      "productId": "38063312418016218",
+      "name": "Keelan suede and neoprene knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$279",
+      "whitePrice": "$795",
+      "discount": "65% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/38063312418016218/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/38063312418016218/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597286541496",
+      "name": "Genna stretch-suede over-the-knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$398",
+      "whitePrice": "$795",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597286541496/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597286541496/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597286541003",
+      "name": "Keelan leather knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$438",
+      "whitePrice": "$795",
+      "discount": "45% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597286541003/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597286541003/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597286340585",
+      "name": "Keelan leather and neoprene over-the-knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$414",
+      "whitePrice": "$795",
+      "discount": "48% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597286340585/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597286340585/Q/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597301986026",
+      "name": "5.0 canvas, suede and leather sneakers",
+      "brandName": "OFF-WHITE™",
+      "redPrice": "$361",
+      "whitePrice": "$515",
+      "discount": "30% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597301986026/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597301986026/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597286542064",
+      "name": "City suede and neoprene over-the-knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$478",
+      "whitePrice": "$795",
+      "discount": "40% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597286542064/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597286542064/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597304905328",
+      "name": "Boyd leather ballet flats",
+      "brandName": "PROENZA SCHOULER",
+      "redPrice": "$384",
+      "whitePrice": "$640",
+      "discount": "40% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597304905328/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597304905328/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597285286225",
+      "name": "City suede and neoprene over-the-knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$414",
+      "whitePrice": "$795",
+      "discount": "48% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597285286225/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597285286225/Q/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300556549",
+      "name": "Agatha leather Chelsea boots",
+      "brandName": "IRIS & INK",
+      "redPrice": "$230",
+      "whitePrice": "",
+      "discount": "",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300556549/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300556549/Q/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300526853",
+      "name": "Nanette distressed textured-leather combat boots",
+      "brandName": "GRENSON",
+      "redPrice": "$196",
+      "whitePrice": "$490",
+      "discount": "60% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300526853/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300526853/R/w340_q80.jpg"
+    },
+    {
+      "productId": "20346390236397484",
+      "name": "Jocey stretch-suede over-the-knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$358",
+      "whitePrice": "$795",
+      "discount": "55% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/20346390236397484/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/20346390236397484/Q/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597286055462",
+      "name": "Tibby suede sandals",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$225",
+      "whitePrice": "$450",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597286055462/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597286055462/Q/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597304397584",
+      "name": "Roopa quilted ripstop and leather ankle boots",
+      "brandName": "GOOD NEWS",
+      "redPrice": "$144",
+      "whitePrice": "$240",
+      "discount": "40% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597304397584/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597304397584/R/w340_q80.jpg"
+    }
+  ],
+  "bestSellersMen": [
+    
+  {
+    "productId": "1647597290691736",
+    "name": "Printed cotton-jersey T-shirt",
+    "brandName": "PESERICO",
+    "redPrice": "$108",
+    "whitePrice": "$269",
+    "discount": "60% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597290691736/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597290691736/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597290692428",
+    "name": "Printed cotton-jersey T-shirt",
+    "brandName": "PESERICO",
+    "redPrice": "$132",
+    "whitePrice": "$295",
+    "discount": "55% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597290692428/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597290692428/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597288741041",
+    "name": "Berk  Pima cotton-blend jersey polo shirt",
+    "brandName": "THEORY",
+    "redPrice": "$62",
+    "whitePrice": "$125",
+    "discount": "50% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597288741041/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597288741041/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597283451104",
+    "name": "Printed cotton-jersey T-shirt",
+    "brandName": "VERSACE",
+    "redPrice": "$268",
+    "whitePrice": "$445",
+    "discount": "40% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597283451104/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597283451104/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597288341058",
+    "name": "Weldon cotton-blend jacquard shirt",
+    "brandName": "THEORY",
+    "redPrice": "$88",
+    "whitePrice": "$195",
+    "discount": "55% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597288341058/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597288341058/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597287544338",
+    "name": "Belted denim shorts",
+    "brandName": "OFF-WHITE™",
+    "redPrice": "$290",
+    "whitePrice": "$580",
+    "discount": "50% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597287544338/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597287544338/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597288098932",
+    "name": "Thrasher distressed printed denim shorts",
+    "brandName": "AMIRI",
+    "redPrice": "$248",
+    "whitePrice": "$550",
+    "discount": "55% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597288098932/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597288098932/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597288347509",
+    "name": "Pima cotton-jersey Henley T-shirt",
+    "brandName": "THEORY",
+    "redPrice": "$50",
+    "whitePrice": "$125",
+    "discount": "60% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597288347509/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597288347509/R/w340_q80.jpg"
+  },
+  {
+    "productId": "38063312419929334",
+    "name": "Printed cotton-jersey T-shirt",
+    "brandName": "SAINT LAURENT",
+    "redPrice": "$312",
+    "whitePrice": "$445",
+    "discount": "30% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/38063312419929334/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/38063312419929334/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597286251831",
+    "name": "Logo-appliquéd French cotton-terry shorts",
+    "brandName": "BURBERRY",
+    "redPrice": "$368",
+    "whitePrice": "$735",
+    "discount": "50% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597286251831/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597286251831/R/w340_q80.jpg"
+  },
+  {
+    "productId": "1647597283012485",
+    "name": "Printed cotton-jersey T-shirt",
+    "brandName": "SAINT LAURENT",
+    "redPrice": "$310",
+    "whitePrice": "$445",
+    "discount": "30% off",
+    "imageUrl": "//www.theoutnet.com/variants/images/1647597283012485/F/w340_q80.jpg",
+    "imageSecond": "//www.theoutnet.com/variants/images/1647597283012485/R/w340_q80.jpg"
+  }
+  ],
+  "bestSellersWomen": [
+    {
+      "productId": "1647597286542064",
+      "name": "City suede and neoprene over-the-knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$478",
+      "whitePrice": "$795",
+      "discount": "40% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597286542064/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597286542064/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597286340585",
+      "name": "Keelan leather and neoprene over-the-knee boots",
+      "brandName": "STUART WEITZMAN",
+      "redPrice": "$414",
+      "whitePrice": "$795",
+      "discount": "48% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597286340585/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597286340585/Q/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597290666990",
+      "name": "Mélange cashmere sweater",
+      "brandName": "BITE STUDIOS",
+      "redPrice": "$266",
+      "whitePrice": "$483",
+      "discount": "45% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597290666990/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597290666990/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597290666998",
+      "name": "Mélange cashmere sweater",
+      "brandName": "BITE STUDIOS",
+      "redPrice": "$266",
+      "whitePrice": "$483",
+      "discount": "45% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597290666998/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597290666998/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597282914425",
+      "name": "Shearling coat",
+      "brandName": "HELMUT LANG",
+      "redPrice": "$1,298",
+      "whitePrice": "$2,595",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597282914425/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597282914425/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597296236120",
+      "name": "Luna glittered woven platform pumps",
+      "brandName": "JIMMY CHOO",
+      "redPrice": "$363",
+      "whitePrice": "$725",
+      "discount": "50% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597296236120/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597296236120/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597278900632",
+      "name": "Godbout shell hooded down jacket",
+      "brandName": "MOOSE KNUCKLES",
+      "redPrice": "$538",
+      "whitePrice": "$895",
+      "discount": "40% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597278900632/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597278900632/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597301746742",
+      "name": "Printed cotton-jersey T-shirt",
+      "brandName": "OFF-WHITE™",
+      "redPrice": "$279",
+      "whitePrice": "$465",
+      "discount": "40% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597301746742/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597301746742/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300424437",
+      "name": "Alicia quilted shell down jacket",
+      "brandName": "STAND STUDIO",
+      "redPrice": "$333",
+      "whitePrice": "$513",
+      "discount": "35% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300424437/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300424437/R/w340_q80.jpg"
+    },
+    {
+      "productId": "1647597300586027",
+      "name": "Farrah quilted shell hooded coat",
+      "brandName": "STAND STUDIO",
+      "redPrice": "$418",
+      "whitePrice": "$760",
+      "discount": "45% off",
+      "imageUrl": "//www.theoutnet.com/variants/images/1647597300586027/F/w340_q80.jpg",
+      "imageSecond": "//www.theoutnet.com/variants/images/1647597300586027/R/w340_q80.jpg"
+    }
+  ]
+}
