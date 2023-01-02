@@ -1,10 +1,10 @@
 const PORT = process.env.PORT || 3001;
-import express from 'express'
-import cheerio from 'cheerio'
-import axios from 'axios'
-import bodyParser from 'body-parser';
-import list from './List.json' assert { type: "json" };
-import Categories from './Categories.json' assert { type: "json" };
+const express = require('express')
+const cheerio = require('cheerio')
+const axios = require('axios')
+const bodyParser = require('body-Parser')
+const list = require('./List.json')
+const Categories = require('./Categories.json')
 
 
 const app = express();
