@@ -4,26 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+      "start": "node backend/index.js",
+    "backend": "nodemon backend/index.js",
+    "frontend": "npm start --prefix frontend",
+    "both": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "akwa-app": "file:../frontend",
     "axios": "^1.2.1",
     "body-parser": "^1.20.1",
     "build": "^0.1.4",
     "cd": "^0.3.3",
     "cheerio": "^1.0.0-rc.12",
-    "connect-timeout": "^1.9.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "i": "^0.3.7",
     "mongoose": "^6.8.2",
     "nodemon": "^2.0.20",
     "npm": "^9.2.0",
-    "path": "^0.12.7",
-    "run": "^1.4.0"
+    "path": "^0.12.7"
   }
 }
