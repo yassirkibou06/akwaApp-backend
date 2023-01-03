@@ -6,10 +6,21 @@ const bodyParser = require('body-parser')
 const list = require('./List.json')
 const Categories = require('./Categories.json')
 const detail = require('./Details.json')
+const cors = require('cors')
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: '30mb', extended: true }))
+app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
+app.use(cors({}))
+
+mongoose.connect(process.env.MOGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => app.listen(PORT, () => console.log(`Server Running on Port ${PORT}`)))
+  .catch((error) => console.log(`${error} did not connect`));
 
 app.get('/', (req, res) => {
     res.send('Welcome to my api');
@@ -83,6 +94,6 @@ app.get('/products/details/:id', async (req, res) => {
     })
 })
 
-app.listen(PORT, () => console.log(`start running on port ${PORT}`));
+//app.listen(PORT, () => console.log(`start running on port ${PORT}`));
 
 
