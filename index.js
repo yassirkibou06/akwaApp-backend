@@ -9,6 +9,7 @@ const detail = require('./Details.json')
 const cors = require('cors')
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const path = require('path')
 
 dotenv.config();
 
@@ -16,8 +17,13 @@ const app = express();
 
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
-app.use(
-    cors());
+app.use(cors());
+
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+  });
 
 mongoose.connect(process.env.MOGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => app.listen(PORT, () => console.log(`Server Running on Port ${PORT}`)))
