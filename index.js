@@ -9,7 +9,6 @@ const detail = require('./Details.json')
 const cors = require('cors')
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const path = require('path')
 
 dotenv.config();
 
@@ -19,9 +18,8 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
 
-
 mongoose.connect(process.env.MOGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => app.listen(PORT, () => console.log(`Server Running on Port ${PORT}`)))
+  .then(() => console.log("conected"))
   .catch((error) => console.log(`${error} did not connect`));
 
 app.get('/', (req, res) => {
@@ -34,7 +32,7 @@ app.get('/', (req, res) => {
 ///
 //
 //// GET Products List Men ///
-app.get('products/list/men/clothing', async (req, res) => {
+app.get('/products/list/men/clothing', async (req, res) => {
     res.json(list.clothingMen);
 })
 app.get('/products/list/men/shoes', async (req, res) => {
@@ -96,6 +94,4 @@ app.get('/products/details/:id', async (req, res) => {
     })
 })
 
-//app.listen(PORT, () => console.log(`start running on port ${PORT}`));
-
-
+app.listen(PORT, () => console.log(`start running on port ${PORT}`));
