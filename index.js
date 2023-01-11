@@ -14,8 +14,8 @@ dotenv.config();
 
 const app = express();
 
-app.use(bodyParser.json({ limit: '30mb', extended: true }))
-app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
+app.use(bodyParser.json({ limit: '500mb',parmeterlimit: 100000, extended: true }))
+app.use(bodyParser.urlencoded({ limit: '500mb',parmeterlimit: 100000, extended: true }))
 app.use(cors());
 
 mongoose.connect(process.env.MOGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -90,7 +90,7 @@ app.get('/products/details/:id', async (req, res) => {
     const id = req.params;
     
     detail.map((el) => {
-        res.send(el[id.id])
+        res.json(el[id.id])
     })
 })
 
